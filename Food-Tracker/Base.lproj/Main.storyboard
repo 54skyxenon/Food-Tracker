@@ -182,6 +182,12 @@
                         <viewLayoutGuide key="safeArea" id="kGT-XO-913"/>
                     </view>
                     <connections>
+                        <outlet property="costLabel" destination="YUg-pL-LcX" id="gwe-UB-tfB"/>
+                        <outlet property="countryOfOriginLabel" destination="ktl-96-cbk" id="Bl1-Sr-coR"/>
+                        <outlet property="descriptionLabel" destination="HKg-Gg-D5O" id="GYf-Qc-d3z"/>
+                        <outlet property="dishNameLabel" destination="Mpe-Jh-fjg" id="l85-Gi-6to"/>
+                        <outlet property="pickerView" destination="Nvh-3H-NCY" id="zNW-Sm-3mv"/>
+                        <outlet property="timePicker" destination="YXY-Z2-lGI" id="Npd-gz-eQ3"/>
                         <segue destination="7bK-jq-Zjz" kind="show" identifier="backAfterCreateDish" id="d7p-m1-vjc"/>
                     </connections>
                 </viewController>
