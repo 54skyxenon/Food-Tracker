@@ -10,9 +10,19 @@ import Foundation
 
 class MenuItem
 {
-    var title: String?
-    var description: String?
-    var cost: Double?
+    var title: String
+    var description: String
+    var cost: Double
+    var timestamp: String
+    var country: String
+    
+    init(title: String, description: String, cost: Double, timestamp: String, country: String) {
+        self.title = title
+        self.description = description
+        self.cost = cost
+        self.timestamp = timestamp
+        self.country = country
+    }
     
     func getTypeOfFood() -> String {
         return "MenuItem"

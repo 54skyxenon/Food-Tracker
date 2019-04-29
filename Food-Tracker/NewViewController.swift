@@ -39,10 +39,31 @@ class NewViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
     
     // MARK: Segues
     
-    @IBAction func createDishButton(_ sender: Any) {
+    @IBAction func createDishButton(_ sender: Any) //this action builds the object and segues back to the main screen
+    {
+        let title = dishNameLabel.text!
+        let description = descriptionLabel.text!
+        let cost = Double(costLabel.text!)! //BE CAREFUL, ASSUMES PERFECT INPUT
+        let country = countryOfOriginLabel.text!
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yy"
+        let timestamp = dateFormatter.string(from: timePicker.date)
+        
+        switch typesOfItems[pickerView.selectedRow(inComponent: 0)] //check which type of food it is and initialize to the appropriate subclass
+        {
+            case "Entree":
+                items.insert(Entree(title: title, description: description, cost: cost, timestamp: timestamp, country: country), at: 0)
+            case "Drink":
+                items.insert(Drink(title: title, description: description, cost: cost, timestamp: timestamp, country: country), at: 0)
+            case "Dessert":
+                items.insert(Dessert(title: title, description: description, cost: cost, timestamp: timestamp, country: country), at: 0)
+            case "Appetizer":
+                items.insert(Appetizer(title: title, description: description, cost: cost, timestamp: timestamp, country: country), at: 0)
+            default:
+                break
+        }
+        
         performSegue(withIdentifier: "backAfterCreateDish", sender: self)
     }
-    
-    // MARK: Data-processing functions
-    
 }
