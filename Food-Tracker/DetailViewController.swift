@@ -17,7 +17,7 @@ class DetailViewController: UIViewController
     @IBOutlet weak var countryLabel: UILabel!
     @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var costLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UITextField!
+    @IBOutlet weak var descriptionLabel: UITextView!
     
     func configureView()
     {
@@ -30,23 +30,23 @@ class DetailViewController: UIViewController
             }
             if let label = timestampLabel
             {
-                label.text = detail.timestamp
+                label.text = "Added on: " + detail.timestamp
             }
             if let label = countryLabel
             {
-                label.text = detail.country
+                label.text = "Origin: " + detail.country
             }
             if let label = typeLabel
             {
-                label.text = detail.getTypeOfFood()
+                label.text = "Type: " + detail.getTypeOfFood()
             }
             if let label = costLabel
             {
-                label.text = "$" + String(detail.cost)
+                label.text = "Cost: $" + String(detail.cost)
             }
             if let label = descriptionLabel
             {
-                label.text = detail.description
+                label.text = "Description: " + detail.description
             }
         }
     }

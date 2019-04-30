@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA2E9D24227834E3007648F6 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2E9D23227834E3007648F6 /* InfoViewController.swift */; };
 		CA5AA01D2276903200A2D3E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5AA01C2276903200A2D3E6 /* AppDelegate.swift */; };
 		CA5AA01F2276903200A2D3E6 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5AA01E2276903200A2D3E6 /* MasterViewController.swift */; };
 		CA5AA0212276903200A2D3E6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5AA0202276903200A2D3E6 /* DetailViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA2E9D23227834E3007648F6 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		CA5AA0192276903200A2D3E6 /* Food-Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food-Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA5AA01C2276903200A2D3E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA5AA01E2276903200A2D3E6 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				CAF832C52276947400DAE878 /* MenuObjects.swift */,
 				CAF832C92276BF4100DAE878 /* NewViewController.swift */,
 				CA5AA0222276903200A2D3E6 /* Main.storyboard */,
+				CA2E9D23227834E3007648F6 /* InfoViewController.swift */,
 				CA5AA0252276903300A2D3E6 /* Assets.xcassets */,
 				CA5AA0272276903300A2D3E6 /* LaunchScreen.storyboard */,
 				CA5AA02A2276903300A2D3E6 /* Info.plist */,
@@ -148,6 +151,7 @@
 				CA5AA01F2276903200A2D3E6 /* MasterViewController.swift in Sources */,
 				CAF832CA2276BF4100DAE878 /* NewViewController.swift in Sources */,
 				CA5AA01D2276903200A2D3E6 /* AppDelegate.swift in Sources */,
+				CA2E9D24227834E3007648F6 /* InfoViewController.swift in Sources */,
 				CAF832C62276947400DAE878 /* MenuObjects.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,7 +6,7 @@ My create task project for AP CSP.
 
 TODO:
 
-1. Label information in details screen
-2. Add mathematical calculations to satisfy College Board's requirements
-3. Finish 2d on your Explore Task
+1. Finish 2d on your Explore Task
+2. Create video
+3. Answer written questions
 4. Refactor code and make the UI look nice if time permits
