@@ -2,7 +2,7 @@
 
 My create task project for AP CSP. 
 
-<a href="https://developer.apple.com/library/archive/referencelibrary/GettingStarted/DevelopiOSAppsSwift/index.html">A simple spinoff of this Apple tutorial in 2016</a>, this project also served as my introduction to iOS App Development.
+<a href="https://developer.apple.com/library/archive/referencelibrary/GettingStarted/DevelopiOSAppsSwift/index.html">A simple spinoff of this Apple tutorial in 2016.</a> This project also served as my introduction to iOS App Development.
 
 TODO:
 
