@@ -19,6 +19,8 @@ class NewViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
     @IBOutlet weak var costLabel: UITextField!
     @IBOutlet weak var descriptionLabel: UITextView!
     
+    // Referenced: https://www.ioscreator.com/tutorials/picker-view-ios-tutorial-ios10 to create picker button functionality
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -37,13 +39,15 @@ class NewViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
         pickerView.dataSource = self
     }
     
+    //End of reference
+    
     // MARK: Segues
     
     @IBAction func createDishButton(_ sender: Any) //this action builds the object and segues back to the main screen
     {
         let title = dishNameLabel.text!
         let description = descriptionLabel.text!
-        let cost = Double(costLabel.text!)! //BE CAREFUL, ASSUMES PERFECT INPUT
+        let cost = Double(costLabel.text!)!
         let country = countryOfOriginLabel.text!
         
         let dateFormatter = DateFormatter()

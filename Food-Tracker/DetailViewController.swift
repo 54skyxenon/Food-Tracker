@@ -10,8 +10,6 @@ import UIKit
 
 class DetailViewController: UIViewController
 {
-    
-    //@IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var timestampLabel: UILabel!
     @IBOutlet weak var countryLabel: UILabel!
@@ -63,7 +61,5 @@ class DetailViewController: UIViewController
             configureView()
         }
     }
-
-
 }
 

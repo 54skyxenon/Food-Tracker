@@ -68,13 +68,13 @@ class MasterViewController: UITableViewController
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return items.count //return objects.count
+        return items.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        let object = items[indexPath.row] //let object = objects[indexPath.row] as! NSDate
+        let object = items[indexPath.row]
         cell.textLabel!.text = object.title
         return cell
     }
