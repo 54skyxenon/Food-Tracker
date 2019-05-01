@@ -8,6 +8,14 @@
 
 import UIKit
 
+extension Double
+{
+    func truncate(places : Int)-> Double
+    {
+        return Double(floor(pow(10.0, Double(places)) * self)/pow(10.0, Double(places)))
+    }
+}
+
 class InfoViewController: UIViewController
 {
     // MARK: Button outlets
@@ -24,6 +32,7 @@ class InfoViewController: UIViewController
     
     // MARK: Calculations
     
+    
     func getNumFoods() -> Int
     {
         return items.count
@@ -31,7 +40,7 @@ class InfoViewController: UIViewController
     
     func getTotalCost() -> Double
     {
-        return getTotalCostOfEntrees() + getTotalCostOfAppetizers() + getTotalCostOfDesserts() + getTotalCostOfDrinks()
+        return (getTotalCostOfEntrees() + getTotalCostOfAppetizers() + getTotalCostOfDesserts() + getTotalCostOfDrinks()).truncate(places: 2)
     }
     
     func getTotalCostOfEntrees() -> Double
@@ -44,7 +53,7 @@ class InfoViewController: UIViewController
                 ans += food.cost
             }
         }
-        return ans
+        return ans.truncate(places: 2)
     }
     
     func getTotalCostOfAppetizers() -> Double
@@ -57,7 +66,7 @@ class InfoViewController: UIViewController
                 ans += food.cost
             }
         }
-        return ans
+        return ans.truncate(places: 2)
     }
     
     func getTotalCostOfDesserts() -> Double
@@ -70,7 +79,7 @@ class InfoViewController: UIViewController
                 ans += food.cost
             }
         }
-        return ans
+        return ans.truncate(places: 2)
     }
     
     func getTotalCostOfDrinks() -> Double
@@ -83,7 +92,7 @@ class InfoViewController: UIViewController
                 ans += food.cost
             }
         }
-        return ans
+        return ans.truncate(places: 2)
     }
     
     func getMostExpensiveFood() -> String
